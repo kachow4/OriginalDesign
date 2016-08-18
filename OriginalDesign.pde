@@ -1,10 +1,15 @@
 void setup()
 {
-  size(100,100);
+  size(600,600);
 }
 void draw()
 {
-  ellipse(50,50,50,50);
+  rect(100,100,300,300);
+}
+void mousePressed ()
+{
+	System.out.println(mouseX+", "+mouseY);
+
 }
 
 
