@@ -4,13 +4,23 @@ void setup()
 }
 void draw()
 {
-  rect(100,100,300,300);
+	background(200, 255, 255);
+	arc();
+	rect();
+	ellipse();
 }
-void mousePressed ()
-{
-	System.out.println(mouseX+", "+mouseY);
-
-}
-
+void rect(){
+	fill(255, 200, 200);
+	quad(200, 250, 400, 250, 370, 350, 230, 350);
+};
+void arc(){
+	noStroke();
+	fill(50, 0, 0);
+	arc(300, 250, 200, 200, PI, 2*PI);
+};
+void ellipse(){
+	fill(255, 0, 0);
+	ellipse(300, 140, 30, 30);
+};
 
 
