@@ -6,7 +6,13 @@ void setup()
   noLoop();
   background(200, 255, 255);
   cupcake();
-  frosting();
+  frosting();	
+  int x = 107;
+	while (x < 498){
+		fill(255);
+		ellipse(x, 300, 20, 20);
+		x = x + 10;
+	}
 }
 
 void draw(){
@@ -21,9 +27,15 @@ void cupcake(){
 	//cake
 	fill(50, 0, 0);
 	arc(300, 300, 400, 400, PI, 2*PI);
-	
-	
 };
+
+void frosting(){
+	fill(0, 0, 255);
+	arc(300, 200, 350, 250, PI, 2*PI);
+	//cherry
+	fill(255, 0, 0);
+	ellipse(300, 70, 50, 50);
+}
 
 void mousePressed(){
 	redraw();
@@ -39,10 +51,3 @@ void bite(){
 	ellipse(mouseX + 10, mouseY - 10, 50, 50);
 };
 
-void frosting(){
-	fill(0, 0, 255);
-	arc(300, 200, 350, 250, PI, 2*PI);
-	//cherry
-	fill(255, 0, 0);
-	ellipse(300, 70, 50, 50);
-}
